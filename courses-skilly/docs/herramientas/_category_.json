@@ -1,0 +1,11 @@
+{
+  "label": "Herramientas",
+  "position": 2,
+  "link": {
+    "type": "generated-index",
+    "description": "5 minutes to learn the most important Docusaurus concepts.",
+    "title": "Fundamentos",
+    "keywords": ["keyword1", "keyword2"], 
+    "image": "img/my-image.png" 
+  }
+}
