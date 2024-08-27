@@ -5,48 +5,65 @@ import styles from './styles.module.css';
 const FeatureList = [
   {
     title: 'Fundamentos',
-    Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
+    Svg: require('@site/static/img/brain.svg').default,
     description: (
       <>
-        Docusaurus was designed from the ground up to be easily installed and
-        used to get your website up and running quickly.
+        Serie de cursos enfocados en la importancia de los fundamentos de la
+        programación, sistemas, redes, bases de datos, etc.
       </>
     ),
     enlace: '/docs/category/fundamentos',
   },
   {
-    title: 'Programación',
-    Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
+    title: 'Herramientas',
+    Svg: require('@site/static/img/tool_m.svg').default,
     description: (
       <>
-        Docusaurus lets you focus on your docs, and we&apos;ll do the chores. Go
-        ahead and move your docs into the <code>docs</code> directory.
+        Configura tu editor de código y sé más productivo con nuestra serie de cursos.
+      </>
+    ),
+    enlace: '/docs/category/herramientas',
+  },
+  {
+    title: 'Programación',
+    Svg: require('@site/static/img/code.svg').default,
+    description: (
+      <>
+        Desarrolla tu skill de programación con nuestra serie de cursos en diferentes lenguajes.
       </>
     ),
     enlace: '/docs/category/programacion', // Añade un enlace aquí también si lo necesitas
   },
   {
-    title: 'Bases de datos',
-    Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
-    description: (
-      <>
-        Extend or customize your website layout by reusing React. Docusaurus can
-        be extended while reusing the same header and footer.
-      </>
-    ),
-    enlace: '/docs/category/bases_datos', // Añade un enlace aquí también si lo necesitas
-  },
-  {
     title: 'Administración de sistemas',
-    Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
+    Svg: require('@site/static/img/server.svg').default,
     description: (
       <>
-        Extend or customize your website layout by reusing React. Docusaurus can
-        be extended while reusing the same header and footer.
+        Se un/a increible devops o sysadmin con nuestra serie de cursos enfocados en administración de sistemas y cloud.
       </>
     ),
     enlace: '/docs/category/sistemas', // Añade un enlace aquí también si lo necesitas
   },
+  {
+    title: 'Bases de datos',
+    Svg: require('@site/static/img/data-base.svg').default,
+    description: (
+      <>
+        Amplia tu skill de bases de datos con nuestra serie de cursos.
+      </>
+    ),
+    enlace: '/docs/category/bases-de-datos', // Añade un enlace aquí también si lo necesitas
+  },
+  {
+    title: 'Proyectos | Modo Historia\u00AE',
+    Svg: require('@site/static/img/projects.svg').default,
+    description: (
+      <>
+        Practica tus skills a través de nuestra simulación de proyectos y entornos reales
+      </>
+    ),
+    enlace: '/docs/category/sistemas', // Añade un enlace aquí también si lo necesitas
+  }
 ];
 
 function Feature({Svg, title, description, enlace}) {
@@ -58,7 +75,7 @@ function Feature({Svg, title, description, enlace}) {
       <div className="text--center padding-horiz--md">
         <Heading as="h3">{title}</Heading>
         <p>{description}</p>
-        <a href={enlace} className="button button--primary">Ver más</a>
+        <a href={enlace} className="button button--primary">Let's go!</a>
       </div>
     </div>
   );

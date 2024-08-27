@@ -3,12 +3,24 @@
  * and scoped locally.
  */
 
-.heroBanner {
+ .heroBanner {
   padding: 4rem 0;
   text-align: center;
   position: relative;
   overflow: hidden;
-  background-image: url('/img/logo.png');
+  background-image:var(--background-index);
+  background-size: cover; /* Asegura que la imagen de fondo cubra todo el contenedor */
+}
+
+.button.button--secondary{
+  background-color: #7AC943 !important;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
 @media screen and (max-width: 996px) {
@@ -22,3 +34,4 @@
   align-items: center;
   justify-content: center;
 }
+/* button button--secondary button--lg */

@@ -81,63 +81,93 @@ const config = {
         },
         items: [
           {
-            type: 'docSidebar',
-            sidebarId: 'tutorialSidebar',
-            position: 'left',
-            label: 'Tutorial',
+            to: '/', label: 'Inicio { 🏡 }', position: 'left'
           },
-          {to: '/blog', label: 'Blog', position: 'left'},
           {
-            href: 'https://github.com/facebook/docusaurus',
-            label: 'GitHub',
-            position: 'right',
+            to: '/fundamentos', label: 'Fundamentos { 📚 }', position: 'left'
           },
+          {
+            to: '/herramientas', label: 'Herramientas { 🔧 }', position: 'left'
+          },
+          {
+            to: '/programacion', label: 'Programación { 👩🏽‍💻 }', position: 'left'
+          },
+          {
+            to: '/sistemas', label: 'Sistemas { 🖥️ }', position: 'left'
+          },
+          {
+            to: '/bbdd', label: 'Bases de datos { 🗃️ }', position: 'left'
+          },
+          {
+            to: '/modo-historia', label: 'Modo Historia \u00AE { 💼 }', position: 'left'
+          },
+          
+          // {
+          //   type: 'docSidebar',
+          //   sidebarId: 'tutorialSidebar',
+          //   position: 'left',
+          //   label: 'Tutorial',
+          // },
+          // {to: '/blog', label: 'Blog', position: 'left'},
+          // {
+          //   href: 'https://github.com/facebook/docusaurus',
+          //   label: 'GitHub',
+          //   position: 'right',
+          // },
         ],
       },
       footer: {
         style: 'dark',
         links: [
-          {
-            title: 'Docs',
-            items: [
-              {
-                label: 'Tutorial',
-                to: '/docs/intro',
-              },
-            ],
-          },
+          // {
+          //   title: 'Docs',
+          //   items: [
+          //     {
+          //       label: 'Fundamentos',
+          //       to: '/docs/category/fundamentos',
+          //     },
+          //     {
+          //       label: 'Herramientas',
+          //       to: '/docs/category/herramientas',
+          //     },
+          //     {
+          //       label: 'Programación',
+          //       to: '/docs/category/programacion',
+          //     },
+          //     {
+          //       label: 'Sistemas',
+          //       to: '/docs/category/sistemas',
+          //     },
+          //     {
+          //       label: 'Bases de datos',
+          //       to: '/docs/category/bases-de-datos',
+          //     },
+          //     {
+          //       label: 'Proyectos | Modo Historia\u00AE',
+          //       to: '/docs/category/modo_historia',
+          //     },
+          //   ],
+          // },
           {
             title: 'Community',
             items: [
               {
-                label: 'Stack Overflow',
-                href: 'https://stackoverflow.com/questions/tagged/docusaurus',
+                label: 'Gitlab',
+                href: 'https://gitlab.com/skilly-academy',
+              },
+              {
+                label: 'Github',
+                href: 'https://github.com/skilly-academy',
               },
               {
                 label: 'Discord',
-                href: 'https://discordapp.com/invite/docusaurus',
-              },
-              {
-                label: 'Twitter',
-                href: 'https://twitter.com/docusaurus',
+                href: 'https://discord.com/users/689209701895766049',
               },
             ],
-          },
-          {
-            title: 'More',
-            items: [
-              {
-                label: 'Blog',
-                to: '/blog',
-              },
-              {
-                label: 'GitHub',
-                href: 'https://github.com/facebook/docusaurus',
-              },
-            ],
-          },
+          }
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} Desarrollado en Skilly desde Cantabria`,
+
+        copyright: `<p>Desarrollado en Skilly desde Cantabria.</p> Copyright © ${new Date().getFullYear()} `,
       },
       prism: {
         theme: prismThemes.github,
